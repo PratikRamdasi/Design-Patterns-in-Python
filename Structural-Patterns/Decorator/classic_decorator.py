@@ -1,5 +1,7 @@
 from abc import ABC
 
+# Augment functionality of the class.
+
 class Shape(ABC):
     def __str__(self):
         return ''
@@ -30,7 +32,7 @@ class ColoredShape(Shape):
         self.shape = shape
         self.color = color
 
-    def resize ...
+    # def resize ...
 
     def __str__(self):
         return f'{self.shape} has color {self.color}'

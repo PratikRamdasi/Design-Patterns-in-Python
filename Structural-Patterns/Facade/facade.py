@@ -38,11 +38,11 @@ class Viewport:
 # Both high level and low level can be easily accessible
 class Console:
     def __init__(self):
-        # setup default bufefr and default viewport for that buffer
+        # setup default buffer and default viewport for that buffer
         # both of them can be [lists], somebody working on low level
         # can add buffer and viewport
         b = Buffer()
-        self.current_viewport = Viewport()
+        self.current_viewport = Viewport(b)
         self.buffers = [b]
         self.viewports = [self.current_viewport]
 
